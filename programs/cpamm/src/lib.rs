@@ -21,4 +21,15 @@ pub mod cp_amm {
     pub fn create_pool(ctx: Context<CreatePool>, _amm_id: Pubkey) -> Result<()> {
         create_pool::handler(ctx)
     }
+
+    pub fn deposit_liquidity(
+        ctx: Context<DepositLiquidity>,
+        amount_a: u64,
+        amount_b: u64,
+        amm_id: Pubkey,
+        mint_a: Pubkey,
+        mint_b: Pubkey,
+    ) -> Result<()> {
+        deposit_liquidity::handler(ctx, amount_a, amount_b, amm_id, mint_a, mint_b)
+    }
 }

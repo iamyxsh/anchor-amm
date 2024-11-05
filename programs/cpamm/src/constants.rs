@@ -13,3 +13,6 @@ pub const LIQUIDITY_MINT_SEED: &str = "liquidity_mint";
 
 #[constant]
 pub const AUTHORITY_SEED: &str = "authority";
+
+#[constant]
+pub const MINIMUM_LIQUIDITY: u64 = 100;
