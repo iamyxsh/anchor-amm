@@ -7,5 +7,5 @@ pub struct Pool {
 
     pub mint_a: Pubkey,
 
-    pub mint_b: u16,
+    pub mint_b: Pubkey,
 }

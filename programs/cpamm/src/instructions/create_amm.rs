@@ -9,7 +9,7 @@ pub struct CreateAmm<'info> {
         payer = payer,
         space = ANCHOR_DISCRIMINATOR + Amm::INIT_SPACE,
         seeds = [
-            constants::CREATE_AMM_SEED.as_bytes(),
+            constants::CREATE_AMM_SEED.as_bytes().as_ref(),
             id.as_ref()
         ],
         bump,

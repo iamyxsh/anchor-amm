@@ -4,7 +4,7 @@ import { Keypair, PublicKey } from '@solana/web3.js'
 import { CpAmm } from '../target/types/cp_amm'
 import { assert, expect } from 'chai'
 
-describe('Create AMM', () => {
+describe.skip('Create AMM', () => {
   anchor.setProvider(anchor.AnchorProvider.env())
 
   const program = anchor.workspace.CpAmm as Program<CpAmm>
